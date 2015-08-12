@@ -27,6 +27,7 @@ chuangbo:marked@0.3.5
 cmather:handlebars-server@0.2.0
 coffeescript@1.0.6
 cosmos:browserify@0.4.0
+custom-package@0.1.0
 dburles:collection-helpers@1.0.3
 ddp@1.1.0
 deps@1.0.7
@@ -37,6 +38,8 @@ facebook@1.2.1
 fastclick@1.0.3
 fortawesome:fontawesome@4.3.0
 fourseven:scss@2.1.1
+gadicohen:robots-txt@0.0.9
+gadicohen:sitemaps@0.0.22
 geojson-utils@1.0.3
 handlebars@1.0.3
 html-tools@1.0.4
@@ -83,7 +86,7 @@ mobile-status-bar@1.0.3
 momentjs:moment@2.10.6
 mongo@1.1.0
 mongo-livedata@1.0.8
-montecruiseto:telescope-theme-sm-newton@0.1.10
+montecruiseto:telescope-theme-sm-newton@0.1.11
 npm-bcrypt@0.7.8_2
 oauth@1.1.4
 oauth1@1.1.4
@@ -120,6 +123,7 @@ telescope:comments@0.22.2
 telescope:core@0.22.2
 telescope:daily@0.22.2
 telescope:datetimepicker@0.22.2
+telescope:debug@0.22.2
 telescope:email@0.22.2
 telescope:embedly@0.22.2
 telescope:events@0.22.2
@@ -142,6 +146,7 @@ telescope:search@0.22.2
 telescope:settings@0.22.2
 telescope:share@0.22.2
 telescope:singleday@0.22.2
+telescope:sitemap@0.22.2
 telescope:subscribe-to-posts@0.22.2
 telescope:tagline-banner@0.22.2
 telescope:tags@0.22.2

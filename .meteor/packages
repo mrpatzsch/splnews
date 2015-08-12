@@ -34,8 +34,10 @@ telescope:tags
 telescope:theme-base
 telescope:theme-hubble
 telescope:update-prompt
+telescope:sitemap
+telescope:debug
 
 ############ Your Custom Packages ############
 
-# custom
+custom-package
 montecruiseto:telescope-theme-sm-newton
