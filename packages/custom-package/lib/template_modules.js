@@ -6,6 +6,11 @@ Telescope.modules.add("hero", {
 
 Telescope.modules.remove("profileDisplay", "user_downvoted_posts");
 
+// Telescope.modules.remove("secondaryNav", "user_menu");
 Telescope.modules.add("secondaryNav", "user_menu", {
-	template: 'custom_sidebar'
+	template: "custom_user_menu"
+});
+
+Telescope.modules.add("postMeta", "post_admin", {
+	template: "custom_post_admin"
 });

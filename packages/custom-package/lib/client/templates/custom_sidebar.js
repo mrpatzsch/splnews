@@ -1,1 +1,0 @@
-Telescope.menuItems.remove("userMenu");

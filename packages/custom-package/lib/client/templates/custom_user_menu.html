@@ -1,0 +1,11 @@
+<template name="custom_user_menu">
+  {{#if isLoggedIn}}
+  <img class="user-avatar" src="{{avatarUrl}}">
+    {{> menuComponent menuName="user" menuLabel=menuLabel menuItems=menuItems menuMode=menuMode menuClass=moduleClass}}
+  {{else}}
+    <div class="signin-signup {{moduleClass}}">
+      <a class="account-link sign-in" href="{{pathFor route='atSignUp'}}">{{_ "sign_up"}}</a>
+      <a class="account-link sign-up" href="{{pathFor route='atSignIn'}}">{{_ "sign_in"}}</a>
+    </div>
+  {{/if}}
+</template>

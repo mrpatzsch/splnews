@@ -24,13 +24,11 @@ Package.onUse(function (api) {
   // client
 
   api.addFiles([
-    'lib/client/templates/hello.html',
-    'lib/client/templates/hello.js',
-    'lib/client/templates/custom_post_title.html',
-    'lib/client/templates/custom_post_title.js',
     'lib/client/templates/custom_upvote.html',
     'lib/client/templates/custom_post_info.html',
-    'lib/client/templates/custom_sidebar.html',
+    'lib/client/templates/custom_user_menu.html',
+    'lib/client/templates/custom_user_menu.js',
+    'lib/client/templates/custom_post_admin.html',
     'lib/client/stylesheets/custom.scss',
   ], ['client']);
 
