@@ -7,8 +7,12 @@ Package.describe({
 Package.onUse(function (api) {
 
   // ---------------------------------- 1. Core dependency -----------------------------------
-
-  api.use("telescope:core");
+  api.use([
+    // core dependencies
+    'telescope:core@0.22.2',
+    'telescope:theme-base@0.22.2',
+    'telescope:theme-hubble@0.22.2'
+  ]);
 
   // ---------------------------------- 2. Files to include ----------------------------------
 
