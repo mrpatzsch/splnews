@@ -25,31 +25,28 @@
 .avatar-medium {
   .avatar-initials{
     font-size: 0px;
+    line-height: 30px;
   }
 }
 
 .avatar-large {
   .avatar-initials{
     font-size: 0px;
+    line-height: 30px;
   }
 }
 
+.fa-share-square-o {
+	color: #aaa;
+	opacity: .8;
+}
 
+.post {
+	height: 100px;
+}
 
-
-@mixin circle-radius { 
-	-webkit-border-radius:50%; 
-	-moz-border-radius:50%; 
-	-ms-border-radius:50%; 
-	-o-border-radius:50%; 
-	border-radius:50%; }
-
-img.user-avatar { 
-	width:25px; 
-	height:25px; 
-	margin-right:5px; 
-	vertical-align:middle; 
-	@include circle-radius; 
+.post-share {
+	display: block;
 }
 
 .points {
