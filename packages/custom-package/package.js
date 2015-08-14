@@ -11,7 +11,7 @@ Package.onUse(function (api) {
     // core dependencies
     'telescope:core@0.22.2',
     'telescope:theme-base@0.22.2',
-    'telescope:theme-hubble@0.22.2'
+    'telescope:theme-hubble@0.22.2',
   ]);
 
   // ---------------------------------- 2. Files to include ----------------------------------

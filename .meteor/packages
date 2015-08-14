@@ -40,4 +40,5 @@ telescope:debug
 ############ Your Custom Packages ############
 
 custom-package
-montecruiseto:telescope-theme-sm-newton
+
+

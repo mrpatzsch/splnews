@@ -1,7 +1,7 @@
 Template.user_menu.helpers({
   avatarUrl: function() { 
-    var currentUser = Meteor.user(); 
-    return getAvatarUrl(currentUser); 
+    var userId = Meteor.user(); 
+    return getAvatarUrl(userId); 
   },
   menuLabel: function () {
     return Users.getDisplayName(Meteor.user());
@@ -15,3 +15,4 @@ Template.user_menu.helpers({
     }
   }
 });
+

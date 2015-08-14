@@ -16,6 +16,27 @@
 	display: block;
 }
 
+.avatar-small {
+  .avatar-initials{
+    line-height: 30px;
+  }
+}
+
+.avatar-medium {
+  .avatar-initials{
+    font-size: 0px;
+  }
+}
+
+.avatar-large {
+  .avatar-initials{
+    font-size: 0px;
+  }
+}
+
+
+
+
 @mixin circle-radius { 
 	-webkit-border-radius:50%; 
 	-moz-border-radius:50%; 
@@ -33,4 +54,8 @@ img.user-avatar {
 
 .points {
 	text-align: center;
+}
+
+header {
+	background-color: #4f81bd;
 }
