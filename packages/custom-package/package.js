@@ -33,6 +33,7 @@ Package.onUse(function (api) {
     'lib/client/templates/custom_user_menu.html',
     'lib/client/templates/custom_user_menu.js',
     'lib/client/templates/custom_post_admin.html',
+    'lib/client/templates/custom_post_avatars.html',
     'lib/client/stylesheets/custom.scss',
   ], ['client']);
 

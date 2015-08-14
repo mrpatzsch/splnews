@@ -1,5 +1,5 @@
 <template name="post_vote">
-  <div class="post-vote {{moduleClass}}">
+  <a href="{{getProfileUrl this}}">{{> avatar user=this shape="circle"}}</a>
     <div class="vote-actions {{actionsClass}}">
       <a class="vote-action upvote-link" href="#" title="{{_ "upvote_"}}">
         {{{icon "upvote"}}}
@@ -12,5 +12,4 @@
         </a>
       {{/if}}
     </div>
-  </div>
 </template>

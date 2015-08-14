@@ -1,4 +1,4 @@
-<template name="avatar_post">
+<template name="custom_post_avatars">
   <div class="post-avatars {{moduleClass}}" aria-hidden="true" aria-live="off">
     <a href="{{getProfileUrl userId}}" title="{{getDisplayName userId}}" class="avatar-link avatar-small author-avatar">
       {{> avatar userId=userId shape="circle"}}
@@ -14,3 +14,4 @@
     {{/if}}
   </div>
 </template>
+
