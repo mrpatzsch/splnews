@@ -19,7 +19,8 @@
 .avatar-small {
   .avatar-initials{
   	font-size: 18px;
-    line-height: 50px;
+    line-height: 60px;
+    text-align: center;
   }
 }
 
@@ -97,4 +98,12 @@
 
 header {
 	background-color: #4f81bd;
+}
+
+@media(max-width:505px) {
+	.fa-share-square-o {
+		margin-right: 0px;
+		line-height: 40px;
+		margin-top: 12px;
+	}
 }
