@@ -18,38 +18,55 @@ Telescope.flagItem = function (collection, itemId, user) {
   var votePower = getVotePower(user);
 
   // in case user is downvoting a previously upvoted item, cancel upvote first
-  Telescope.cancelUpvote(collection, item, user);
+  // Telescope.cancelUpvote(collection, item, user);
 
   // Votes & Score
   var result = collection.update({_id: item && item._id, downvoters: { $ne: user._id }},{
     $addToSet: {downvoters: user._id},
-    $inc: {downvotes: 1, baseScore: -votePower},
+    // $inc: {downvotes: 1, baseScore: -votePower},
     $set: {inactive: false}
   });
 
   if (result > 0) {
-    // Add item to list of downvoted items
-    var vote = {
-      itemId: item._id,
-      votedAt: new Date(),
-      power: votePower
-    };
-    addVote(user._id, vote, collectionName, 'down');
+    function flagSubmitNotification (post) {
 
-    // extend item with baseScore to help calculate newScore
-    item = _.extend(item, {baseScore: (item.baseScore - votePower)});
-    Telescope.updateScore({collection: collection, item: item, forceUpdate: true});
+      var adminIds = _.pluck(Users.find({'isAdmin': true}, {fields: {_id:1}}).fetch(), '_id');
+      var notificationData = {
+        post: _.pick(post, '_id', 'userId', 'title', 'url', 'downvotes')
+      };
 
-    // if the item is being upvoted by its own author, don't give karma
-    if (item.userId !== user._id)
-      modifyKarma(item.userId, votePower);
+      // remove post author ID from arrays
+      adminIds = _.without(adminIds, post.userId);
 
-    // --------------------- Server-Side Async Callbacks --------------------- //
+      if (!!notifiedUserIds.length) {
+        // if post is approved, notify everybody
+        Herald.createNotification(notifiedUserIds, {courier: 'newPost', data: notificationData});
+      }
 
-    Telescope.callbacks.runAsync("downvoteAsync", item);
+    }
+  Telescope.callbacks.add("postSubmitAsync", postSubmitNotification);
+  //   // Add item to list of downvoted items
+  //   var vote = {
+  //     itemId: item._id,
+  //     votedAt: new Date(),
+  //     power: votePower
+  //   };
+  //   addVote(user._id, vote, collectionName, 'down');
 
-    // ----------------------------------------------------------------------- //
-  }
+  //   // extend item with baseScore to help calculate newScore
+  //   item = _.extend(item, {baseScore: (item.baseScore - votePower)});
+  //   Telescope.updateScore({collection: collection, item: item, forceUpdate: true});
+
+  //   // if the item is being upvoted by its own author, don't give karma
+  //   if (item.userId !== user._id)
+  //     modifyKarma(item.userId, votePower);
+
+  //   // --------------------- Server-Side Async Callbacks --------------------- //
+
+  //   Telescope.callbacks.runAsync("downvoteAsync", item);
+
+  //   // ----------------------------------------------------------------------- //
+  // }
   // console.log(collection.findOne(item._id));
   return true;
 };
