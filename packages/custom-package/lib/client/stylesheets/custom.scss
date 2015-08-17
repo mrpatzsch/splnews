@@ -27,13 +27,13 @@
 
 .avatar-medium {
   .avatar-initials{
-    font-size: 0px;
+    font-size: 12px;
   }
 }
 
 .avatar-large {
   .avatar-initials{
-    font-size: 0px;
+    font-size: 24px;
   }
 }
 
@@ -123,4 +123,14 @@ header {
 
 .flag {
 	font-size: 80%;
+}
+
+.comment-actions {
+	.upvote {
+		border: none;
+		padding: none;
+	}
+	.fa-chevron-up {
+		padding-right: 10px;
+	}
 }
