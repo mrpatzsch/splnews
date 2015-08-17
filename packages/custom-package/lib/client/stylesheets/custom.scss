@@ -38,8 +38,12 @@
 }
 
 .post-avatars {
+	position: relative;
+	margin: 0 auto;
 	display: inline-block;
 	display: flex;
+	top: -18px;
+	left: -28px;
 	.author-avatar {
 		display: block;
 	}
@@ -56,7 +60,6 @@
 		}
 	}
 	.avatar {
-		margin: 0 auto;
 		display: inline-block;
 		height: 60px;
 		width: 60px;
@@ -64,11 +67,8 @@
 	}
 }
 
-.avatar-small .avatar-circle .avatar-image, .avatar-small .avatar-circle .avatar-initials {
-	position: absolute;
-	top: -18px;
-	left: -28px;
-}
+
+
 
 .fa-share-square-o {
 	color: #aaa;
@@ -90,10 +90,18 @@
 	text-align: center;
 }
 
-.vote-actions{
+.vote-actions {
+	margin-right: 10px;
+}
+
+.upvote {
 	border: 1px solid black;
 	padding: 5px;
-	margin-right: 10px;
+	text-align: center;
+}
+
+.custom_flag_post {
+	margin-top: 5px;
 	text-align: center;
 }
 
@@ -107,4 +115,8 @@ header {
 		line-height: 40px;
 		margin-top: 12px;
 	}
+}
+
+.flag {
+	font-size: 80%;
 }
