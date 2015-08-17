@@ -45,28 +45,28 @@ Telescope.flagItem = function (collection, itemId, user) {
 
     }
   Telescope.callbacks.add("postSubmitAsync", postSubmitNotification);
-  //   // Add item to list of downvoted items
-  //   var vote = {
-  //     itemId: item._id,
-  //     votedAt: new Date(),
-  //     power: votePower
-  //   };
-  //   addVote(user._id, vote, collectionName, 'down');
+    // Add item to list of downvoted items
+    var vote = {
+      itemId: item._id,
+      votedAt: new Date(),
+      power: votePower
+    };
+    addVote(user._id, vote, collectionName, 'down');
 
-  //   // extend item with baseScore to help calculate newScore
-  //   item = _.extend(item, {baseScore: (item.baseScore - votePower)});
-  //   Telescope.updateScore({collection: collection, item: item, forceUpdate: true});
+    // extend item with baseScore to help calculate newScore
+    item = _.extend(item, {baseScore: (item.baseScore - votePower)});
+    Telescope.updateScore({collection: collection, item: item, forceUpdate: true});
 
-  //   // if the item is being upvoted by its own author, don't give karma
-  //   if (item.userId !== user._id)
-  //     modifyKarma(item.userId, votePower);
+    // if the item is being upvoted by its own author, don't give karma
+    if (item.userId !== user._id)
+      modifyKarma(item.userId, votePower);
 
-  //   // --------------------- Server-Side Async Callbacks --------------------- //
+    // --------------------- Server-Side Async Callbacks --------------------- //
 
-  //   Telescope.callbacks.runAsync("downvoteAsync", item);
+    Telescope.callbacks.runAsync("downvoteAsync", item);
 
-  //   // ----------------------------------------------------------------------- //
-  // }
-  // console.log(collection.findOne(item._id));
+    // ----------------------------------------------------------------------- //
+  }
+  console.log(collection.findOne(item._id));
   return true;
 };
