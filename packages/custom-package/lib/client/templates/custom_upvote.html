@@ -6,12 +6,14 @@
 					<span class="points">{{baseScore}}</span> 
 				</a> 
 			</div>
+			  {{#if enableDownvotes}}
 			<div class="custom_flag_post">
-        <a class="vote-action flag-link" href="#" title="{{_ "downvote"}}">
+        <a class="vote-action downvote-link" href="#" title="{{_ "downvote"}}">
           {{{icon "warning"}}}
           <span class="sr-only">{{_ "downvote"}}</span>
           <span class="points flag">Flag</span>
         </a>
 			</div>
+			  {{/if}}
 		</div>
 </template>

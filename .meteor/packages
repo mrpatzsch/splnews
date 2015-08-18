@@ -36,6 +36,7 @@ telescope:theme-hubble
 telescope:update-prompt
 telescope:sitemap
 telescope:debug
+telescope:messages
 
 ############ Your Custom Packages ############
 
