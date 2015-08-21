@@ -1,4 +1,4 @@
-Template.users_dashboard.helpers({
+Template.custom_users_dashboard.helpers({
   settings: function() {
     return {
       collection: 'all-users',
@@ -7,7 +7,7 @@ Template.users_dashboard.helpers({
       fields: [
         { key: 'avatar', label: '', tmpl: Template.users_list_avatar, sortable: false },
         { key: 'createdAt', label: 'Member Since', tmpl: Template.users_list_created_at, sort: 'descending' },
-        { key: 'isAdmin', label: 'Admin', fn: function(val){return val ? 'Yes':'No'} },
+        { key: 'isAdmin', label: 'NOITSSNOT', fn: function(val){return val ? 'Yes':'No'} },
         { key: 'username', label: 'Username', tmpl: Template.users_list_username },
         { key: 'twittername', label: 'TwitterName', tmpl: Template.users_list_twitterUsername },
         { key: 'telescope.displayName', label: 'Display Name', tmpl: Template.users_list_display_name },
