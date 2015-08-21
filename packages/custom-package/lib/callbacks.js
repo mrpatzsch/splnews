@@ -1,7 +1,7 @@
-// function alertThanks (post) {
-//   alert("Thanks for submitting a post!");
-//   return post;
-// }
-// Telescope.callbacks.add("postSubmitClient", alertThanks);
+function alertThanks (post) {
+  alert("Submitted");
+  return post;
+}
+Telescope.callbacks.add("postSubmitClient", alertThanks);
 
-// Telescope.utils.icons.upvote = "arrow-up";
+Telescope.utils.icons.upvote = "arrow-up";

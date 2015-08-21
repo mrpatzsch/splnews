@@ -36,6 +36,7 @@ Package.onUse(function (api) {
     'lib/client/templates/custom_post_avatars.html',
     'lib/client/templates/custom_banner.html',
     'lib/client/templates/custom_flag_post.js',
+    'lib/client/templates/custom_bookmarklet.html',
     'lib/client/stylesheets/custom.scss',
   ], ['client']);
 

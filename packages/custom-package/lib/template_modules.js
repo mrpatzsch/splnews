@@ -14,3 +14,9 @@ Telescope.modules.add("secondaryNav", "user_menu", {
 Telescope.modules.add("postMeta", "post_admin", {
 	template: "custom_post_admin"
 });
+
+Telescope.modules.add("top", {
+  template: 'posts_views_nav',
+  order: 99,
+  only: ["top_karma"]
+});
