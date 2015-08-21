@@ -1,5 +1,5 @@
 function alertThanks (post) {
-  alert("Submitted");
+  alert("Submitted.");
   return post;
 }
 Telescope.callbacks.add("postSubmitClient", alertThanks);

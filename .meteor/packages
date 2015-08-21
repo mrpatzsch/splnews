@@ -37,6 +37,7 @@ telescope:update-prompt
 telescope:sitemap
 telescope:debug
 telescope:messages
+telescope:events
 
 ############ Your Custom Packages ############
 
