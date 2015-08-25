@@ -1,12 +1,12 @@
 Package.describe({
   summary: 'Rank posts by tweet count',
 version: '0.1.0',
-name: 'telescope-tweets'
+name: 'custom-karma-view'
 });
 
 Package.onUse(function(api) {
   api.use([
-    'core'
+    'telescope:core'
     ]);
 
   api.add_files([

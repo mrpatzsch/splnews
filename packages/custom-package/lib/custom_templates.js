@@ -45,7 +45,7 @@
 //     }
 //   }
 // });
-Template.avatar_post.replaces("post_avatars");
+// Template.avatar_post.replaces("post_avatars");
 
 Template.user_menu.helpers({
   menuLabel: function () {

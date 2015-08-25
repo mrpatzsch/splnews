@@ -12,7 +12,6 @@ Package.onUse(function (api) {
     'telescope:core@0.22.2',
     'telescope:theme-base@0.22.2',
     'telescope:theme-hubble@0.22.2',
-    'jquery'
   ]);
 
   // ---------------------------------- 2. Files to include ----------------------------------
@@ -29,14 +28,14 @@ Package.onUse(function (api) {
   // client
 
   api.addFiles([
-    'lib/client/templates/custom_upvote.html',
+    // 'lib/client/templates/custom_upvote.html',
     'lib/client/templates/custom_post_info.html',
     'lib/client/templates/custom_user_menu.html',
     'lib/client/templates/custom_user_menu.js',
     'lib/client/templates/custom_post_admin.html',
     'lib/client/templates/custom_post_avatars.html',
     'lib/client/templates/custom_banner.html',
-    'lib/client/templates/custom_flag_post.js',
+    // 'lib/client/templates/custom_flag_post.js',
     'lib/client/templates/custom_bookmarklet.html',
     // 'lib/client/templates/custom_users_dashboard.js',
     'lib/client/templates/custom_users_dashboard.html',
