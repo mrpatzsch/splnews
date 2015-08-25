@@ -42,14 +42,5 @@ telescope:events
 ############ Your Custom Packages ############
 
 custom-package
-
-
 jeremy:telescope-plugin-hero
 okgrow:iron-router-autoscroll
-telescope-tweets
-jquery
-underscore
-templating
-fourseven:scss
-percolatestudio:synced-cron
-dandv:rate-limit
