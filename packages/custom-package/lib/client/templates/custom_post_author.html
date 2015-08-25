@@ -1,6 +1,9 @@
 <template name="post_author">
   <div class="post-meta-item">
-<!--     <a class="post-author" href="{{getProfileUrl userId}}">{{getDisplayName userId}}</a>
- -->    <a class="post-author" href="https://twitter.com/{{getUsername userId}}">@{{getUsername userId}}</a>
+  	{{#if getUsername userId}}
+    	<a class="post-author" href="https://twitter.com/{{getUsername userId}}">@{{getUsername userId}}</a>
+    {{else}}
+    	<a class="post-author" href="{{getProfileUrl userId}}">{{getDisplayName userId}}</a>
+    {{/if}}
   </div>
 </template>
