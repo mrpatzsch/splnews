@@ -34,7 +34,9 @@ Package.onUse(function (api) {
     'lib/client/templates/custom_user_menu.js',
     'lib/client/templates/custom_post_admin.html',
     'lib/client/templates/custom_post_avatars.html',
-    'lib/client/templates/custom_users_dashboard.html',
+    'lib/client/templates/custom_post_share.html',
+    'lib/client/templates/custom_post_author.html',
+    // 'lib/client/templates/custom_users_dashboard.html',
     'lib/client/stylesheets/custom.scss',
   ], ['client']);
 
