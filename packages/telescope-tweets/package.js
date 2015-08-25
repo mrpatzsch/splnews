@@ -6,12 +6,7 @@ name: 'telescope-tweets'
 
 Package.onUse(function(api) {
   api.use([
-    'jquery',
-    'underscore',
-    'templating',
-    'fourseven:scss',
-    'percolatestudio:synced-cron',
-    'dandv:rate-limit'
+    'core'
     ]);
 
   api.add_files([
