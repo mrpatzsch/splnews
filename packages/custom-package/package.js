@@ -28,14 +28,16 @@ Package.onUse(function (api) {
   // client
 
   api.addFiles([
-    // 'lib/client/templates/custom_upvote.html',
+    'lib/client/templates/custom_upvote.html',
     'lib/client/templates/custom_post_info.html',
     'lib/client/templates/custom_user_menu.html',
     'lib/client/templates/custom_user_menu.js',
     'lib/client/templates/custom_post_admin.html',
     'lib/client/templates/custom_post_avatars.html',
+    'lib/client/templates/custom_banner.html',
+    'lib/client/templates/custom_bookmarklet.html',
     'lib/client/templates/custom_users_dashboard.html',
-    'lib/client/templates/custom_meta.html',
+    'lib/client/templates/custom_meta_tags.html',
     'lib/client/stylesheets/custom.scss',
   ], ['client']);
 
