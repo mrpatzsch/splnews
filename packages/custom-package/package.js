@@ -34,12 +34,8 @@ Package.onUse(function (api) {
     'lib/client/templates/custom_user_menu.js',
     'lib/client/templates/custom_post_admin.html',
     'lib/client/templates/custom_post_avatars.html',
-    'lib/client/templates/custom_banner.html',
-    // 'lib/client/templates/custom_flag_post.js',
-    'lib/client/templates/custom_bookmarklet.html',
-    // 'lib/client/templates/custom_users_dashboard.js',
     'lib/client/templates/custom_users_dashboard.html',
-    'lib/client/templates/custom_meta_tags.html',
+    'lib/client/templates/custom_meta.html',
     'lib/client/stylesheets/custom.scss',
   ], ['client']);
 
