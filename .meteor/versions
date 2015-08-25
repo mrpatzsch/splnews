@@ -31,6 +31,7 @@ cmather:handlebars-server@2.0.0
 coffeescript@1.0.6
 cosmos:browserify@0.4.0
 custom-package@0.1.0
+dandv:rate-limit@0.1.1
 dburles:collection-helpers@1.0.3
 ddp@1.1.0
 deps@1.0.7
@@ -124,6 +125,7 @@ spiderable@1.0.7
 srp@1.0.3
 standard-app-packages@1.0.5
 tap:i18n@1.5.1
+telescope-tweets@0.1.0
 telescope:api@0.23.0
 telescope:comments@0.23.0
 telescope:core@0.23.0
