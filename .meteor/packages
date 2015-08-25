@@ -46,5 +46,10 @@ custom-package
 
 jeremy:telescope-plugin-hero
 okgrow:iron-router-autoscroll
-jquery
 telescope-tweets
+jquery
+underscore
+templating
+fourseven:scss
+percolatestudio:synced-cron
+dandv:rate-limit
