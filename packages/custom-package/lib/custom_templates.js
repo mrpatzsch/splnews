@@ -60,7 +60,3 @@ Template.user_menu.helpers({
     }
   }
 });
-
-
-
-
