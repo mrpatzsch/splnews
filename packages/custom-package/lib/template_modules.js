@@ -14,3 +14,7 @@ Telescope.modules.add("secondaryNav", "user_menu", {
 Telescope.modules.add("postMeta", "post_admin", {
 	template: "custom_post_admin"
 });
+
+Telescope.modules.add('primaryNav', 'search', {
+	template: 'extra_menu'
+});

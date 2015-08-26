@@ -61,7 +61,6 @@ Template.user_menu.helpers({
   }
 });
 
-Template.custom_search.replaces("search")
 
 
 

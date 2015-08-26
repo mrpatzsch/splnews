@@ -38,6 +38,7 @@ Package.onUse(function (api) {
     'lib/client/templates/custom_post_author.html',
     'lib/client/templates/custom_meta.html',
     'lib/client/templates/custom_search.html',
+    'lib/client/templates/extra_menu.html',
     'lib/client/stylesheets/custom.scss',
   ], ['client']);
 
