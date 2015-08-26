@@ -1,9 +1,10 @@
 <template name="custom_post_avatars">
   <div class="post-avatars {{moduleClass}}" aria-hidden="true" aria-live="off">
-    <a href="{{getProfileUrl userId}}" title="{{getDisplayName userId}}" class="avatar-link avatar-small author-avatar">
+    <a href="https://twitter.com/{{getUsername userId}}" title="{{getDisplayName userId}}" class="avatar-link avatar-small author-avatar" target="_blank">
       {{> avatar userId=userId shape="circle"}}
+      @{{getUsername userId}}
     </a>
-    {{#if commenters}}
+    <!-- {{#if commenters}}
       <div class="post-commenters">
       {{#each commenters}}
         <a href="{{getProfileUrl this}}" title="{{getDisplayName this}}" class="avatar-link avatar-small commenter-avatar">
@@ -11,6 +12,6 @@
         </a>
       {{/each}}
       </div>
-    {{/if}}
+    {{/if}} -->
   </div>
 </template>

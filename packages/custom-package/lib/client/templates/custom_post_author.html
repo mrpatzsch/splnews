@@ -1,9 +1,9 @@
 <template name="custom_post_author">
   <div class="post-meta-item">
-  	{{#if getUsername userId}}
+<!--   	{{#if getUsername userId}}
     	<a class="post-author" href="https://twitter.com/{{getUsername userId}}">@{{getUsername userId}}</a>
-    {{else}}
-    	<a class="post-author" href="{{getProfileUrl userId}}">{{getDisplayName userId}}</a>
-    {{/if}}
-  </div>
+    {{else}} -->
+    	<a class="post-author" href="{{getProfileUrl userId}}">{{getUsername userId}}</a>
+<!--     {{/if}}
+ -->  </div>
 </template>
