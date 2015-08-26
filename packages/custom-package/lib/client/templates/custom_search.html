@@ -1,0 +1,10 @@
+<template name="custom_search">
+  {{#if canSearch}}
+    <div class="search {{searchQueryEmpty}} {{moduleClass}}">
+        <input id="search" type="search" class="search-field" placeholder="{{_ 'search'}}" value="{{searchQuery}}">
+    </div>
+  {{/if}}
+  <div class="support_us">
+  	<a href="https://startuppolicylab.wedid.it/" target="_blank">Support us!</a>
+  </div>
+</template>
