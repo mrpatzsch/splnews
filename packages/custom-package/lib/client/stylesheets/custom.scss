@@ -37,10 +37,6 @@
   }
 }
 
-.post-avatars .avatar-link:last-child {
-	margin-right: 10px;
-}
-
 .post-avatars {
 	position: relative;
 	margin: 0 auto;
@@ -60,7 +56,7 @@
 		display: inline-block;
 		margin-right: 6px;
 		&:last-child {
-			margin-right: 0px;
+			margin-right: 10px;
 		}
 	}
 	.avatar {
@@ -144,6 +140,16 @@ header {
 	img {
 		margin: 0 auto;
 	}
+}
+
+.support_us {
+	margin: 0 auto;
+	margin-bottom: 20px;
+	margin-top: -20px;
+	text-align: center;
+	border: 1px solid white;
+	width: 200px;
+	background-color: #4F81BD;
 }
 
 /*.post.sticky {
